@@ -15,9 +15,8 @@ ___
 **Question 1.1 : Lister les comptes utilisateurs**     
 Faire la liste de l'ensemble des comptes utilisateurs ayant la possibilité de se connecter (d'ouvrir un shell) sur le serveur.   
 
-**1.1 : Lister les comptes des utilisateurs** 
+**1.1 : Liste des comptes des utilisateurs** 
 
-La liste des comptes utilisateurs ayant la possibilité de se connecter (d'ouvrir un shell) sur le serveur :   
 root  
 daemon  
 bin  
@@ -55,16 +54,6 @@ ___
 Créé un compte pour ton usage personnel.   
 
 **1.2 : Création de mon compte utilisateur pour un usage personnel**  
-
-#Passer en **root**  
-wilder@cp3:~# su -    
-#Renseignement du mot de passe du root     
-Mot de passe : MXtTvqGXmZDf   
-#Ajout d'un utilisateur    
-root@cp3:~# adduser beatrice    
-#Renseignement de mon mot de passe     
-Nouveau mot de passe :     
-Retapez le nouveau mot de passe :   
  
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/04df4f3a-36e2-4e2b-92c8-936ae9f1e026)
 
@@ -120,8 +109,9 @@ ____
 
 **Question 2.3 : Gestion de LVM**   
 
-**2.3 : Ajout d'un nouveau volume logique LVM de 2 Gio pour héberger les sauvegardes bareos. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.
-Combien d'espace disponible reste-t-il dans le groupe de volume ?**
+**2.3 : Ajout d'un nouveau volume logique LVM de 2 Gio pour héberger les sauvegardes bareos.   
+Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.  
+Combien d'espace disponible reste-t-il dans le groupe de volume ?**  
 
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/16e7705c-111c-47f0-98a9-d2c86cf7e949)
 
@@ -129,7 +119,7 @@ Combien d'espace disponible reste-t-il dans le groupe de volume ?**
 
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/2193287c-b4dc-4220-86ee-e83b32b35c42)
 
-Il reste 2,505 GO   
+**Il reste 2,505 GO**   
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/751b17ba-0376-4632-8240-d586b9ae74e0)
 
 ___
@@ -147,10 +137,10 @@ Autoriser l'accès à distance à ton compte personnel uniquement.
 
 **3.1 : Configuration de SSH**  
 
-Désactiver complètement l'accès à distance de l'utilisateur root   
+**Désactiver complètement l'accès à distance de l'utilisateur root **    
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/865e0939-5a3e-4657-a2c7-902898e09101)
 
-Autoriser l'accès à distance à ton compte personnel uniquement.   
+**Autoriser l'accès à distance à ton compte personnel uniquement.**     
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/f55ad5bc-afc6-4cf9-92e5-42526538eb0d)
 
 ____
@@ -158,11 +148,11 @@ ____
 **Question 3.2 : Authentification cryptographique**  
 
  
-Mettre en place une authentification par clé valide    
+**3.2 : Mettre en place une authentification par clé valide**     
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/0d294324-d35c-4bfc-afb7-583485593bb2)
 
  
-Désactiver l'authentification par mot de passe    
+**3.2 : Désactiver l'authentification par mot de passe**      
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/84401b84-d94d-4b59-9071-e3e95e67bade)
 
 ___
@@ -175,7 +165,9 @@ ____
   
 Quelles sont actuellement les règles appliquées sur Netfilter ?    
 Quels types de communications sont autorisées ?       
-Et quels types sont interdites ?     
+Et quels types sont interdites ?  
+
+**4.1 : Analyse de règles de filtrage**
 Il n'y a aucune règle de filtrage.     
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/c1edb17f-8b58-40a7-9447-cfd30d7dcfe5)
 
@@ -197,14 +189,24 @@ ___
 
 Les composants bareos-dir, bareos-sd et bareos-fd sont installés avec une configuration par défaut.    
 
+___
+
 **Question 5.1 : Les composants de bareos**  
 
 Explique succinctement les rôles respectifs des 3 composants bareos installés sur la VM.    
 
-bareos-dir (Bareos Director) : C'est le composant central de Bareos. Il gère la configuration du système de sauvegarde, planifie les sauvegardes, contrôle les opérations de sauvegarde, et supervise l'ensemble du processus de sauvegarde. Le Bareos Director est essentiel pour coordonner les actions des autres composants.
+**5.1 : Rôles des composants de bareos**  
+Le Bareos Director orchestre l'ensemble du processus de sauvegarde,   
+le Bareos Storage Daemon gère les supports de stockage,   
+et le Bareos File Daemon collecte et transfère les données à sauvegarder.    
+En travaillant ensemble, ces composants permettent la mise en place d'un système de sauvegarde complet et fiable.      
 
-bareos-sd (Bareos Storage Daemon) : Ce composant est responsable de la communication avec les dispositifs de stockage, tels que les disques, les bandes magnétiques ou les lecteurs de sauvegarde. Il gère la lecture et l'écriture des données de sauvegarde vers et depuis les supports de stockage physiques.
+___
 
-bareos-fd (Bareos File Daemon) : Le Bareos File Daemon s'exécute sur les machines que vous souhaitez sauvegarder. Il est responsable de la collecte des données à sauvegarder sur la machine source et de les transférer au Bareos Director pour la sauvegarde. Le Bareos File Daemon est installé sur chaque système que vous souhaitez inclure dans vos sauvegardes.
+**Question 5.2 : Analyse de la configuration**     
 
-En résumé, le Bareos Director orchestre l'ensemble du processus de sauvegarde, le Bareos Storage Daemon gère les supports de stockage, et le Bareos File Daemon collecte et transfère les données à sauvegarder. En travaillant ensemble, ces composants permettent la mise en place d'un système de sauvegarde complet et fiable.
+Quels sont actuellement les clients configurés pour être sauvegardés par le serveur ?   
+Liste les sauvegardes actuellement planifiées en précisant :  
+Les dossiers et fichiers devant être sauvegardés   
+Les planifications associées  
+Les clients auxquels elles s'appliquent  
