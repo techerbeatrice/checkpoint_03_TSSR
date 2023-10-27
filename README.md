@@ -177,15 +177,17 @@ ___
 
 **Question 4.2 : Paramétrage avec nftables**  
 
-Ajoute les règles nécessaires pour autoriser bareos actuellement installé sur le serveur à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.   
+Ajoute les règles nécessaires pour autoriser bareos actuellement installé sur le serveur à  
+communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.   
 
 Rappel : Bareos utilise les ports TCP 9101 à 9103 pour la communication entre ses différents composants.   
 
-![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/f1eeb1f8-d6e4-45e6-87e0-1f04c11ff1a4)
+**Se déplacer dans le répertoire **etc/bareos** et Création d'un fichier de règles personnalisées pour bareos     
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/77dcd543-2db3-40ec-b71a-92596d1d76c5)
 
-___
+___  
 
-**Partie 5 : Sauvegardes**  
+## Partie 5 : Sauvegardes**  
 
 Les composants bareos-dir, bareos-sd et bareos-fd sont installés avec une configuration par défaut.    
 
@@ -205,8 +207,39 @@ ___
 
 **Question 5.2 : Analyse de la configuration**     
 
-Quels sont actuellement les clients configurés pour être sauvegardés par le serveur ?   
+**5.2 : Les clients configurés pour être sauvegardés par le serveur    
 Liste les sauvegardes actuellement planifiées en précisant :  
 Les dossiers et fichiers devant être sauvegardés   
 Les planifications associées  
-Les clients auxquels elles s'appliquent  
+Les clients auxquels elles s'appliquent**    
+   
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/8b4457eb-4bbb-4fdc-ac93-84d4dcc0a678)
+
+___
+
+**Question 5.3 : Configuration**  
+
+On souhaite que l'ensemble des fichiers, tel que défini dans le FileSet LinuxAll soit sauvegardés sur le client bareos-fd. 
+Quelles sont les modifications de configuration à apporter ?  
+
+**5.3a : Ajout de la ligne LinuxAll dans bareos-dir.conf**     
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/b2e962fc-eb9b-45f8-9df4-46da190b9e75)
+
+**5.3b : Mise à jour du FileSet**    
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/5deda3a8-d0f5-4f3b-ae84-148617221e78)
+
+___
+
+## Partie 6 : Analyse de logs  
+
+___
+
+**Question 6.1 : Les échecs de connexion**   
+
+**6.1 : Liste les 10 derniers échecs de connexion ayant eu lieu sur le serveur en indiquant pour chacun :   
+La date et l'heure de la tentative     
+L'adresse IP de la machine ayant fait la tentative**    
+
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/9b87b3a1-c17f-419e-a54c-90cb430e17d3)
+
+
