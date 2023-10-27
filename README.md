@@ -215,7 +215,7 @@ ___
 
 **Question 5.3 : Configuration**  
 
-On souhaite que l'ensemble des fichiers, tel que défini dans le FileSet LinuxAll soit sauvegardés sur le client bareos-fd. 
+On souhaite que l'ensemble des fichiers, tel que défini dans le FileSet LinuxAll soit sauvegardés sur le client bareos-fd.   
 Quelles sont les modifications de configuration à apporter ?  
 
 **5.3a : Ajout de la ligne LinuxAll dans bareos-dir.conf**     
@@ -236,6 +236,7 @@ ___
 La date et l'heure de la tentative     
 L'adresse IP de la machine ayant fait la tentative**    
 
+Je n'en vois aucune   
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/f6ebaaa6-16f8-4009-ab72-93cf21f38ba8)
 
 
