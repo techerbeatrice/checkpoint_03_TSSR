@@ -127,7 +127,10 @@ Combien d'espace disponible reste-t-il dans le groupe de volume ?**
 
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/43552068-dbfc-4b20-950a-ab7407bc3155)
 
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/2193287c-b4dc-4220-86ee-e83b32b35c42)
 
+Il reste 2,505 GO   
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/751b17ba-0376-4632-8240-d586b9ae74e0)
 
 ___
 
