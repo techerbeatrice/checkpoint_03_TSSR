@@ -153,4 +153,14 @@ Désactiver complètement l'accès à distance de l'utilisateur root
 Autoriser l'accès à distance à ton compte personnel uniquement.   
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/f55ad5bc-afc6-4cf9-92e5-42526538eb0d)
 
+____
 
+**Question 3.2 : Authentification cryptographique**  
+
+ 
+Mettre en place une authentification par clé valide    
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/0d294324-d35c-4bfc-afb7-583485593bb2)
+
+ 
+Désactiver l'authentification par mot de passe    
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/84401b84-d94d-4b59-9071-e3e95e67bade)
