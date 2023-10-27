@@ -133,24 +133,22 @@ ___
 Désactiver complètement l'accès à distance de l'utilisateur root.  
 Autoriser l'accès à distance à ton compte personnel uniquement.   
 
-**3.1 : Configuration de SSH**  
-
-**Désactiver complètement l'accès à distance de l'utilisateur root**    
+**3.1a - Désactiver complètement l'accès à distance de l'utilisateur root**    
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/865e0939-5a3e-4657-a2c7-902898e09101)
 
-**Autoriser l'accès à distance à ton compte personnel uniquement.**     
+**3.1b - Autoriser l'accès à distance à ton compte personnel uniquement.**     
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/f55ad5bc-afc6-4cf9-92e5-42526538eb0d)
 
 ____
 
 **Question 3.2 : Authentification cryptographique**  
 
-**3.2 : Mettre en place une authentification par clé valide**     
+**3.2a : Mettre en place une authentification par clé valide**     
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/0d294324-d35c-4bfc-afb7-583485593bb2)
 
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/fa4b67d4-8e4b-4c16-9c02-392d2143be75)
  
-**3.2 : Désactiver l'authentification par mot de passe**      
+**3.2b : Désactiver l'authentification par mot de passe**      
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/84401b84-d94d-4b59-9071-e3e95e67bade)
 
 ___
@@ -179,7 +177,7 @@ communiquer avec les clients bareos potentiellement présents sur l'ensemble des
 
 Rappel : Bareos utilise les ports TCP 9101 à 9103 pour la communication entre ses différents composants.   
 
-**Se déplacer dans le répertoire **etc/bareos** et Création d'un fichier de règles personnalisées pour bareos     
+**Se déplacer dans le répertoire **_etc/bareos_** et Création d'un fichier de règles personnalisées pour bareos**     
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/77dcd543-2db3-40ec-b71a-92596d1d76c5)
 
 ___  
@@ -216,7 +214,7 @@ ___
 
 **Question 5.3 : Configuration**  
 
-On souhaite que l'ensemble des fichiers, tel que défini dans le FileSet LinuxAll soit sauvegardés sur le client bareos-fd.   
+On souhaite que l'ensemble des fichiers, tel que défini dans le **FileSet LinuxAll** soit sauvegardé sur le client **bareos-fd**.   
 Quelles sont les modifications de configuration à apporter ?  
 
 **5.3a : Ajout de la ligne LinuxAll dans bareos-dir.conf**     
@@ -237,7 +235,7 @@ ___
 La date et l'heure de la tentative     
 L'adresse IP de la machine ayant fait la tentative**    
 
-Je n'en vois aucune   
+Je n'en vois aucun   
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/f6ebaaa6-16f8-4009-ab72-93cf21f38ba8)
 
 
