@@ -114,6 +114,7 @@ La commande **mdadm --detail** pour voir **l'état du volume RAID**
 
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/2c41955e-6d6a-45c4-ae74-3c3b9c961831)
 
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/50c0ebdf-8ee2-423b-a761-228d01029d09)
 
 ____
 
@@ -121,6 +122,12 @@ ____
 
 **2.3 : Ajout d'un nouveau volume logique LVM de 2 Gio pour héberger les sauvegardes bareos. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.
 Combien d'espace disponible reste-t-il dans le groupe de volume ?**
+
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/16e7705c-111c-47f0-98a9-d2c86cf7e949)
+
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/43552068-dbfc-4b20-950a-ab7407bc3155)
+
+
 
 ___
 
