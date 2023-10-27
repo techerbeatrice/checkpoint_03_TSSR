@@ -85,16 +85,16 @@ ___
 a - Quels sont les systèmes de fichiers actuellement montés ?  
 b - Quel type de système de stockage ils utilisent ?  
 
-**2.1a : Les systèmes de fichiers actuellement montés** 
+**2.1 : Analyse des disques**  
+**a - Les systèmes de fichiers actuellement montés**  
+**b - Le type de système de stockage ils utilisent** 
 
-![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/90088c55-10ec-492d-8c9c-979f142461c2)
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/9bff0f53-59a8-44bd-a2c5-058f591c90d2)
 
-![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/0c8c2201-ed85-486f-a405-9477ed7f66e6)
+___
 
 
-**2.1b : Le type de système de stockage ils utilisent**  
 
-![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/4c62b12a-331c-4c57-aa8f-4df4fb9bc4fa)
 
 
 
