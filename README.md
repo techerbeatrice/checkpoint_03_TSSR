@@ -135,7 +135,7 @@ Autoriser l'accès à distance à ton compte personnel uniquement.
 
 **3.1 : Configuration de SSH**  
 
-**Désactiver complètement l'accès à distance de l'utilisateur root **    
+**Désactiver complètement l'accès à distance de l'utilisateur root**    
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/865e0939-5a3e-4657-a2c7-902898e09101)
 
 **Autoriser l'accès à distance à ton compte personnel uniquement.**     
