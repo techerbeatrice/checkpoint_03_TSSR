@@ -191,3 +191,20 @@ Rappel : Bareos utilise les ports TCP 9101 à 9103 pour la communication entre s
 
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/f1eeb1f8-d6e4-45e6-87e0-1f04c11ff1a4)
 
+___
+
+**Partie 5 : Sauvegardes**  
+
+Les composants bareos-dir, bareos-sd et bareos-fd sont installés avec une configuration par défaut.    
+
+**Question 5.1 : Les composants de bareos**  
+
+Explique succinctement les rôles respectifs des 3 composants bareos installés sur la VM.    
+
+bareos-dir (Bareos Director) : C'est le composant central de Bareos. Il gère la configuration du système de sauvegarde, planifie les sauvegardes, contrôle les opérations de sauvegarde, et supervise l'ensemble du processus de sauvegarde. Le Bareos Director est essentiel pour coordonner les actions des autres composants.
+
+bareos-sd (Bareos Storage Daemon) : Ce composant est responsable de la communication avec les dispositifs de stockage, tels que les disques, les bandes magnétiques ou les lecteurs de sauvegarde. Il gère la lecture et l'écriture des données de sauvegarde vers et depuis les supports de stockage physiques.
+
+bareos-fd (Bareos File Daemon) : Le Bareos File Daemon s'exécute sur les machines que vous souhaitez sauvegarder. Il est responsable de la collecte des données à sauvegarder sur la machine source et de les transférer au Bareos Director pour la sauvegarde. Le Bareos File Daemon est installé sur chaque système que vous souhaitez inclure dans vos sauvegardes.
+
+En résumé, le Bareos Director orchestre l'ensemble du processus de sauvegarde, le Bareos Storage Daemon gère les supports de stockage, et le Bareos File Daemon collecte et transfère les données à sauvegarder. En travaillant ensemble, ces composants permettent la mise en place d'un système de sauvegarde complet et fiable.
