@@ -164,7 +164,7 @@ Quels types de communications sont autorisées ?
 Et quels types sont interdites ?  
 
 **4.1 : Analyse de règles de filtrage**
-Il n'y a aucune règle de filtrage.     
+Règle de filtrage **ACCEPT** autorise le trafic    
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/c1edb17f-8b58-40a7-9447-cfd30d7dcfe5)
 
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/54a3118e-37d2-42b8-931a-3d943b15d961)
