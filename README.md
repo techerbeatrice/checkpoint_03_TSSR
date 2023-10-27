@@ -164,3 +164,30 @@ Mettre en place une authentification par clé valide
  
 Désactiver l'authentification par mot de passe    
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/84401b84-d94d-4b59-9071-e3e95e67bade)
+
+___
+
+## Partie 4 : Filtrage et analyse réseau  
+
+____
+
+**Question 4.1 : Analyse de règles de filtrage**  
+  
+Quelles sont actuellement les règles appliquées sur Netfilter ?    
+Quels types de communications sont autorisées ?       
+Et quels types sont interdites ?     
+Il n'y a aucune règle de filtrage.     
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/c1edb17f-8b58-40a7-9447-cfd30d7dcfe5)
+
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/54a3118e-37d2-42b8-931a-3d943b15d961)
+
+___
+
+**Question 4.2 : Paramétrage avec nftables**  
+
+Ajoute les règles nécessaires pour autoriser bareos actuellement installé sur le serveur à communiquer avec les clients bareos potentiellement présents sur l'ensemble des machines du réseau local sur lequel se trouve le serveur.   
+
+Rappel : Bareos utilise les ports TCP 9101 à 9103 pour la communication entre ses différents composants.   
+
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/f1eeb1f8-d6e4-45e6-87e0-1f04c11ff1a4)
+
