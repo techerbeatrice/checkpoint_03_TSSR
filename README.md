@@ -96,23 +96,33 @@ ___
 **Question 2.2 : Gestion du RAID**  
 Ajoute un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID   
 
-**2.2 : Ajout d'un nouveau disque de 8,00 Gio au serveur et réparation du volume RAID**   
+**2.2 : Ajout d'un nouveau disque de 8,00 Gio au serveur et réparation du volume RAID**  
+
 La commande **slbk** affiche le nouveau disque dur **sdb** de 8 go   
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/36a87dcb-fa3b-4f37-9809-8fb80e122697)
 
 La commande **vgextend** ajoute le nouveau disque au groupe de volume **cp3-vg**  
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/7d14628e-55b4-46b4-ab41-ef8790cc2c1f)
 
-La commande **vgdisplay** affiche le nouveau volume d'espace de stockage    
+La commande **vgdisplay** affiche le nouveau volume d'espace de stockage pour **cp3-vg**     
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/374eb09e-a65f-4cbd-9a05-824fae5fdf1a)
 
-__
+La commande **mdadm --detail** pour voir **l'état du volume RAID**        
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/95198691-be71-46df-a426-390d7406c289)
 
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/aec535e5-e147-4d24-8e03-9e994f3623d1)
+
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/2c41955e-6d6a-45c4-ae74-3c3b9c961831)
+
+
+____
 
 **Question 2.3 : Gestion de LVM**   
 
 **2.3 : Ajout d'un nouveau volume logique LVM de 2 Gio pour héberger les sauvegardes bareos. Ce volume doit être monté automatiquement à chaque démarrage dans l'emplacement par défaut : /var/lib/bareos/storage.
 Combien d'espace disponible reste-t-il dans le groupe de volume ?**
+
+___
 
 
 
