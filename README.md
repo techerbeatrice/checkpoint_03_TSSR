@@ -167,7 +167,7 @@ Et quels types sont interdites ?
 Règle de filtrage **ACCEPT** autorise le trafic    
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/c1edb17f-8b58-40a7-9447-cfd30d7dcfe5)
 
-![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/54a3118e-37d2-42b8-931a-3d943b15d961)
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/638cabc2-cd81-420c-9753-217ffdd4da70)
 
 ___
 
