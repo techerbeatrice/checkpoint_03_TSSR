@@ -15,7 +15,7 @@ ___
 **Question 1.1 : Lister les comptes utilisateurs**     
 Faire la liste de l'ensemble des comptes utilisateurs ayant la possibilité de se connecter (d'ouvrir un shell) sur le serveur.   
 
-**1.1 : Liste des comptes des utilisateurs** 
+**1.1 : Liste des comptes des utilisateurs avec la commande cat /etc/shadow ou cat/etc/passwd** 
 
 root  
 daemon  
