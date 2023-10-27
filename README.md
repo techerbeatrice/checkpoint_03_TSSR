@@ -148,6 +148,7 @@ ____
 **3.2 : Mettre en place une authentification par clé valide**     
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/0d294324-d35c-4bfc-afb7-583485593bb2)
 
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/fa4b67d4-8e4b-4c16-9c02-392d2143be75)
  
 **3.2 : Désactiver l'authentification par mot de passe**      
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/84401b84-d94d-4b59-9071-e3e95e67bade)
