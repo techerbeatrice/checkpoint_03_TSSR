@@ -17,7 +17,7 @@ Faire la liste de l'ensemble des comptes utilisateurs ayant la possibilité de s
 
 **1.1 : Lister les comptes des utilisateurs** 
 
-La liste des comptes utilisateurs ayant la possibilité de se connecter (d'ouvrir un shell) sur le serveur :
+La liste des comptes utilisateurs ayant la possibilité de se connecter (d'ouvrir un shell) sur le serveur :   
 root  
 daemon  
 bin  
