@@ -182,7 +182,7 @@ Rappel : Bareos utilise les ports TCP 9101 à 9103 pour la communication entre s
 
 ___  
 
-## Partie 5 : Sauvegardes**  
+## Partie 5 : Sauvegardes    
 
 Les composants bareos-dir, bareos-sd et bareos-fd sont installés avec une configuration par défaut.    
 
