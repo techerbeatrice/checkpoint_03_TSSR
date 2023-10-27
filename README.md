@@ -71,8 +71,6 @@ ___
 ___
 
 **Question 2.1 : Analyse des disques**    
-a - Quels sont les systèmes de fichiers actuellement montés ?  
-b - Quel type de système de stockage ils utilisent ?  
 
 **2.1 : Analyse des disques**  
 **a - Les systèmes de fichiers actuellement montés**  
@@ -147,7 +145,6 @@ ____
 
 **Question 3.2 : Authentification cryptographique**  
 
- 
 **3.2 : Mettre en place une authentification par clé valide**     
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/0d294324-d35c-4bfc-afb7-583485593bb2)
 
@@ -158,7 +155,6 @@ ____
 ___
 
 ## Partie 4 : Filtrage et analyse réseau  
-
 ____
 
 **Question 4.1 : Analyse de règles de filtrage**  
