@@ -85,23 +85,26 @@ Ajoute un nouveau disque de 8,00 Gio au serveur et réparer le volume RAID
 
 **2.2 : Ajout d'un nouveau disque de 8,00 Gio au serveur et réparation du volume RAID**  
 
+La commande **mdadm --detail** pour voir l'état du volume RAID   
+on le voit **degraded**   
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/95198691-be71-46df-a426-390d7406c289)
+
 La commande **slbk** affiche le nouveau disque dur **sdb** de 8 go   
 ![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/36a87dcb-fa3b-4f37-9809-8fb80e122697)
 
-La commande **vgextend** ajoute le nouveau disque au groupe de volume **cp3-vg**  
-![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/7d14628e-55b4-46b4-ab41-ef8790cc2c1f)
+La commande **fdisk /dev/sdb** va partionner le nouveau disque **sdb**,   
+l'utilitaire de partitionnement s'ouvre, taper **m**,    
+puis **n** qui correspond à **ajouter une nouvelle partition**, ensuite **p** pour **primaire**,
+puis **w** pour **enregistrer**     
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/b9a774e6-7ec8-4162-abd0-5b1807778232)
 
-La commande **vgdisplay** affiche le nouveau volume d'espace de stockage pour **cp3-vg**     
-![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/374eb09e-a65f-4cbd-9a05-824fae5fdf1a)
+La commande **lsblk** affiche le nouveau disque, qui cette fois est partionné   
+La commande **mdadm --add /dev/md0 /dev/sdb**  répare le volume RAID   
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/54b700ee-b0f6-44c4-97d0-bff8cbfcf3c5)
 
-La commande **mdadm --detail** pour voir **l'état du volume RAID**        
-![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/95198691-be71-46df-a426-390d7406c289)
-
-![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/aec535e5-e147-4d24-8e03-9e994f3623d1)
-
-![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/2c41955e-6d6a-45c4-ae74-3c3b9c961831)
-
-![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/50c0ebdf-8ee2-423b-a761-228d01029d09)
+La commande **mdadm --detail** pour voir à nouveau **l'état du volume RAID**  
+Cette fois, on le voit réparé **clean**, **degraded** a disparu   
+![image](https://github.com/techerbeatrice/checkpoint_03_TSSR/assets/138071140/f1f71263-deb2-403b-8459-f40981b0e940)
 
 ____
 
